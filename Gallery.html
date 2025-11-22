@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photo Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #6c63ff;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        .gallery-container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+        .gallery-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        footer {
+            background: #e5e3ff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+            color: #444;
+        }
+        a{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Gallery</h1>
+        <p>A collection of memories and moments</p>
+        <nav>
+             <a href="index.html">Home</a> | 
+            <a href="Hobbies.html">Hobbies</a> |
+            <a href="Education.html">Education</a> |
+            <a href="Fave food.html">Fave Food</a> |
+            <a href="Friends.html">Friends</a> | 
+            <a href="Address.html">Address</a> | 
+            <a href="Fave Games.html">Fave Games</a> | 
+            <a href="Contact info.html">Contact Info</a> | 
+            <a href="Resume.html">Resume</a> | 
+        </nav>
+    </header>
+
+   <style>
+    .gallery-container {
+        width: 1200px;
+        border: 2px solid #ccc;
+        padding: 20px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .Gala, .Chika {
+        width: 350px; 
+        height: 350px;
+        overflow: hidden; 
+    }
+
+    .gallery-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; 
+    }
+</style>
+
+<div class="gallery-container">
+
+    <div class="Gala numba 1">
+        <img src="Gala 1.jpg" alt="Photo 1">
+    </div>
+
+    <div class="Gala numba 2">
+        <img src="Gala 2.jpg" alt="Photo 2">
+    </div>
+
+    <div class="Chika time">
+        <img src="Chika.jpg" alt="Photo 3">
+    </div>
+
+</div>
+
+
+</body>
+</html>
